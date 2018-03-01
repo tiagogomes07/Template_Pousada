@@ -1,0 +1,611 @@
+@media screen and (max-width: 767px) {
+
+    body {
+        background: url("../img/fundo1.jpg");
+        background-repeat: repeat;
+        max-width: 1365px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+    }
+       
+        #superior{
+        
+        width:100%;
+        height: 100px;    
+        position: relative;
+        background: url("../img/fundo1.jpg"); 
+        text-align: center;
+    }
+    
+	
+        #superior img{
+        margin-top: 25px;
+        padding-top: 20px;
+        width:90%;
+        text-align: center;
+    }
+    
+        #placa{
+        display: none;
+        
+    }
+    
+        #fundoFotos{
+        
+        display: none; 
+
+
+		      
+		}
+		
+		#fundoFotos img{
+			
+				height:250px;
+		}
+		
+    
+        #fundoFotosMobile{
+        
+            /* display: block; */
+			/* image: url("../img/fotos_pousada/IMG_45742.jpg"); */
+            /* height: 260px; */
+            /* width: 100%; */
+            /* float: left; */
+		}
+		
+		#fundoFotosMobile img{
+			height: 210px;
+			
+		}
+    
+    
+    #painelMobile{
+        height: 100px;
+       
+       
+    }
+    
+    #conteudoInternoMobile{
+                
+        
+    }
+
+        #menu{
+        
+        float:rigt;
+        width: 100%;
+        background-color: #ed7d31;      
+        color: white;
+        display: inline-block;
+        margin-left: 0;
+    }
+    
+        #menu > ul > li{
+        
+        width:100%;
+        height: 40px;
+        background-color: #ed7d31;
+        border-bottom-color:black;
+        color: white;
+        display:inline-block; 
+        '''margin-left: -40px;
+    }
+
+        #menu > ul{
+        margin-left:0px; 
+        width:100%;
+        padding-left: 0;
+        margin-top: 20px;
+
+      }
+
+        #menu ul > li > a{
+        display:inline-block;
+        margin-left: 0;       
+        padding-top:13px;
+        width:100%;
+        height:40px;
+        text-align:center;
+        color: white;
+    }
+    
+
+    
+        #menu_quartos{
+        display:none;
+        padding-left: 0px;  
+    }
+    
+        #menu_quartos li{
+        margin-top: 2px;
+        height: 204px;
+        background-color: rgb(180,82,16);
+        padding-bottom: 150px;
+         
+    }
+    
+        #menu_quartos ul li a{
+        width: 100%;    
+        margin-top: 10px;
+        margin-bottom: 0px;
+        background: red;
+        height: 198px;
+        
+    }
+        
+        #menu_quartos ul{
+         padding-left: 0px;   
+    }
+    
+    
+        #menu_quartos img{
+        width: 95%;
+        height: 160px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+
+    
+        #menu > ul > li:nth-child(3){
+
+    }
+    
+    .espacamento_menu{
+        background-color: aqua;
+        margin-top: 84px;
+
+        
+    }
+
+        #reservas{    
+          float: left;
+          background-color: antiquewhite;
+          width: 100%;
+          height: 300px;
+          
+    }
+    
+        #reservas p{
+        font-family: cursive;
+        font-size: 18px;
+        font-style: italic;
+        color: orange;
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    #datetimepicker1{
+        
+        width: 100%;
+    }
+    
+    #reservas input[type="date"]
+    {
+        
+        width: 90%;
+        margin-left: 5px;
+        height: 30px;
+    }
+    
+    #reservas select
+    {
+        
+        width: 90%;
+        margin-left: 5px;
+        height: 30px;
+    }
+    
+    
+   #reservas>div{
+            margin: 10px;
+            background-color: bisque;
+            padding-top: 0px;
+            padding-left: 3px;       
+            height: 260px;       
+    }
+    
+    #reservas input[type="button"]{
+        
+        margin-top: 10px;
+        
+        margin-left: 25%;
+    }
+    
+    /*
+        #reservas p{
+            font-family: cursive;
+            font-size: 18px;
+            font-style: italic;
+            color: orange;
+            text-align: center;
+            padding-top: 5px;
+        
+    }
+    */
+        #painel{
+            display: block;
+            width: 100%;
+            background-color: aliceblue;
+            color: #ed7d31;
+            display: none;
+            height: 70px;
+            border-style:groove;
+            position: absolute;
+            margin-top: 40px;
+			
+			
+    }
+    
+    
+        #inferior{
+          
+			background-image: url("./img/fundo1.jpg");
+			background-repeat: repeat-y;
+            width:100%;
+            height: 150px;
+            float:left;
+            display: none;
+		}
+		#numPessoas{
+			width: 90%;
+			margin-left: 5px;
+			height: 30px;	
+		}	
+
+
+    
+    
+    
+   
+
+    
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    
+    /*acomodacoes html*/
+
+    body {
+        background: url("../img/fundo1.jpg");
+        background-repeat: repeat;
+        background-color: #993300;
+        position: relative;
+        max-width: 1365px;
+        margin-left: auto;
+        margin-right: auto;
+        margin:auto
+    }
+    
+    
+    #fundoFotosMobile{
+        
+        display: none
+    }
+    
+    #logo{
+    float:left
+        }
+
+
+    #fotos{
+
+            width: 30%;
+            float:right
+        }
+
+    #superior{
+        		background: url("../img/fundo1.jpg");
+		background-repeat: repeat;
+		
+        width:100%;
+        height: 100px;    
+        position:relative;
+        
+    }
+
+    #superior img{
+    margin-top: 20px;
+    margin-left: 50px;
+
+        }
+
+
+
+    #inferior{
+          
+          width:100%;
+          height: 150px;
+          position:absolute;
+          z-index: -1;
+
+    }
+
+    #menu {
+
+        float:left;
+        width:100%;
+        height: 40px;
+        background-color: #ed7d31;
+        border-bottom-color:black;
+        color: white;
+        display:inline-block;
+        position:absolute;
+    }
+
+    #menu > ul > li{
+        float:left;
+        width:150px;
+        height: 40px;
+        background-color: #ed7d31;
+        border-bottom-color:black;
+        color: white;
+        display:inline-block;    
+    }
+
+    #menu>ul{
+        margin-left:190px;           
+
+      }
+
+    #menu >ul >li > a{
+        display:inline-block;
+
+        margin-right:-2px;
+        padding-top:13px;
+        width:150px;
+        height:40px;
+        text-align:center;
+        color: white;
+    }
+
+
+    #menu>ul>li>a:hover {
+        background-color:rgb(204,93,18);
+        color: white;   
+        height:40px;        
+        text-decoration: none;
+
+    }
+
+    #menu_quartos{  
+      display: none;
+
+        background-color: #ed7d31;
+        margin-left:0px;
+        padding-left: 0px;
+        color: white;	
+        width:458px;
+        height:200px;
+        padding-top: 0px;
+    }
+
+    #menu_quartos li{  
+
+        display: inline-block;
+
+    }
+
+    #menu_quartos + li{  
+
+        margin-left: -10px;
+    }
+
+    #menu_quartos li a{  
+
+        height:40px;
+        display: block;
+        color: white;
+        width:150px;
+        height:100px;
+        margin-left:0px;
+        padding-top: 5px;   
+        text-align: center;  	
+    }
+
+    #menu_quartos li a img{  
+        width: 140px;
+        height: 67px;
+
+    }
+    
+    #menu_quartos li a:hover {
+        background-color:rgb(204,93,18);
+        color: white;
+        height:100px;    
+        color: white;
+        text-decoration: none;
+
+    }
+    
+    
+    
+    #placa img{
+    margin-left: 85%;    
+    position: absolute;               
+        }
+    
+    #placa div{
+        width: 100px;
+        height: 50px;
+        position: absolute;  
+        margin-left: 88%;  
+        color: white;
+        font-family: sans-serif;
+        font-style:italic;
+        font-size: 15px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+    #reservas{
+        opacity: 0.95;
+      position: absolute;
+      margin-left: 20px;
+      margin-top: 50px;
+      background-color: antiquewhite;
+      width: 230px;
+      height: 280px;
+      border-radius: 3px;
+        
+    }
+    #reservas > div{
+        margin: 10px;
+        
+        background-color: bisque;
+        padding-top: 10px;
+        padding-left: 3px;       
+        height: 230px;       
+    }
+    #reservas p{
+        font-family: cursive;
+        font-size: 18px;
+        font-style: italic;
+        color: orange;
+        text-align: center;
+        padding-top: 5px;
+        
+    }
+    
+    #but{
+        width: 100px;
+        margin-left: 40px;
+    }
+    
+
+    
+    #fundoFotos{ 
+        margin-top: 0px;
+        width: 100%;
+        height: 450px;
+        /* background: url("../img/foto1.png"); */
+        display: inline-block;
+    }
+    
+    
+    
+    #painel{
+        display:block;
+        margin-left: 300px;
+        margin-top: -385px;
+        width: 910px;
+        height: 370px;
+        color: black;
+        border-radius: 3px;
+        font-family:sans-serif;
+        padding-top: 5px;
+        padding-left: 5px;
+		position: absolute;
+		z-index:-1;
+        
+        
+    }
+    
+    #painel > div:nth-child(1){
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 5px;
+        padding-top: 5px;
+        height: 30px;
+        background: #ed7d31;
+        color: white;
+        border-radius: 3px;
+        width: 100%
+    }
+    
+    #painel > div:nth-child(2){
+        
+        background-color: white;
+        margin-top: 0px;
+        display: block;
+        height: 350px;
+        width: 100%;
+        border-radius: 4px;
+      
+    }
+    
+
+
+    
+    input[type="date"] {
+        width: 187px; 
+        height: 30px;
+        text-align: center;
+        border-radius: 3px;
+    }
+    
+    #datetimepicker1, #datetimepicker2{
+        width: 177px;
+        height: 30px;
+        margin-left: 6px;
+    }
+
+    #datetimepicker1 span:nth-child(1){      
+        background-color: aqua;
+       
+    }
+    
+    #reservas label {
+        margin-left: 5px;
+        margin-bottom: 0px;
+        
+    }
+    
+    #reservas input[type="button"]{
+        padding-top: 0px;
+        width: 188px;
+        height: 30px;
+        margin-left: 4px;
+        margin-top: 0px;
+
+    }
+    
+   #reservas select {
+        
+        width: 190px;
+        height: 30px;
+        margin-left: 5px;
+        border-radius: 6px;
+
+    }
+    
+    #reservas select option{
+        text-align: right;
+    }
+    
+    #reservas option{
+        text-align: right;
+    }
+    
+    #butaoTeste{
+        
+        z-index: 1;
+        position: absolute
+            
+    }
+
+	#numPessoas{
+		
+		width: 187px;
+		height: 30px;
+		margin-left: 5px;
+		
+	}
+	
+	#carousel01{		
+		z-index: -1;	
+	}
+
+    .carousel-inner img{
+        width:100%;
+    }
+	
+
+}
+
+

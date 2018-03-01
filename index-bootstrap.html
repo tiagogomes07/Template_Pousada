@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+    <title>Pousada Morada do Sol</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=320px" ></meta>	
+    	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos_completo.css">
+    
+    
+	
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    
+    <script src="js/moment-develop/moment.js"></script> 
+    <script src="bootstrap-master/js/transition.js"></script>
+    <script src="bootstrap-master/js/collapse.js"></script>
+    <script src="bootstrap-master/dist/js/bootstrap.min.js"  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    
+    
+    
+    
+	<link rel="stylesheet" href="" media="">
+	</head>	
+	<body   >	      
+  		
+        <div id="superior">
+                <img src="img/letreiro.png">
+        </div>
+        
+       
+        
+        
+            <div id="menu">
+               <ul   class="">
+                   <li class=""><a href="index.html">Home</a> </li>
+                   
+                   <li id="menu_acomodacoes"  class=""> <a  href="#">Acomodações</a>
+				   
+                       <ul id="menu_quartos" >
+                         
+                        <li ><a href="#"> Suíte Sol <img src="img/1.JPG" ></a> </li>
+						
+                        <li ><a href="#"> Suíte Mar <img src="img/3.JPG" > </a>  </li>
+						
+                        <li ><a href="#"> Suíte Farol <img src="img/2.JPG"> </a>  </li>
+                           
+                        <li ><a href="#"> Suíte Single <img src="img/suite_single.JPG" > </a> </li>
+						
+                        <li ><a href="#"> Suíte Large <img src="img/suite_large.jpg" > </a>  </li>
+						
+                        <li ><a href="#"> Suíte Master<img src="img/suite_master.JPG" > </a>  </li>
+                     
+                       </ul>
+                   </li>
+                   <li class=""><a href="#">Sobre nós</a> </li>
+                   <li class=""><a href="faleConosco.html">Promoções</a> </li>                   
+				   <li class=""><a href="#">Como chegar</a> </li>
+               </ul>
+
+            </div>
+        
+       <div id="placa">
+            <img src="img/placa2.png">
+        </div> 
+        
+        <div >            
+                <div id="reservas">                 
+                <p>Faça sua reserva</p>            
+                <div> 
+                    <label>Data Entrada</label>
+                    <div class="form-group">
+                      <div class="input-group date" id="datetimepicker1">
+                          
+                        <input type="text" id="DtInicial" class="" ng-model="Reserva.DtEntrada" placeholder="Data incial"/>
+                          
+                         <span class="input-group-addon">
+                         <span class="glyphicon glyphicon-calendar"></span>
+                         </span>
+                      </div> 
+                    </div>
+                    <label>Data Saída</label>
+                    <div class="form-group">
+                      <div class="input-group date" id="datetimepicker2">
+
+                        <input type="text" id="DtSaida" class="" ng-model="Reserva.DtSaida" placeholder="Data final"/>
+
+                         <span class="input-group-addon">
+                         <span class="glyphicon glyphicon-calendar"></span>
+                         </span>
+                      </div> 
+                    </div>
+                    
+                    
+                    <select>
+                    <option >2 adultos</option>
+                    <option>2 adultos + 2 Crianças</option>
+                    <option>4 adultos + 4 Crianças</option>
+                    <option>4 adultos + 4 Crianças</option>
+                    </select>
+                    
+                    
+                    
+                    <input type="button" class="btn btn-warning" value="Reservar agora">
+
+                                           
+                  </div>                
+                </div> 
+            
+                        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                   
+                    format: 'DD/MM/YYYY',
+                        
+                });
+                
+                $('#datetimepicker2').datetimepicker({
+                   
+                    format: 'DD/MM/YYYY',
+                        
+                });
+            });
+        </script>
+        </div>
+     
+        
+       <div id="fundoFotos" >
+        
+           <div id=painel> 
+           
+            <p>Teste</p>
+               
+               {{Reserva.DtEntrada}}
+               {{Reserva.DtSaida }}
+
+      
+           </div>
+                      
+           
+        </div>
+
+        
+        <div id="inferior">
+            
+                
+        </div>
+        
+        
+        
+                
+
+
+		
+        <script src="js/script.js"></script>
+        <script src="js/script-angular.js"></script>
+        
+        
+
+    
+    </body>
+	
+</html>

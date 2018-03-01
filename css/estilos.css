@@ -1,0 +1,125 @@
+body{
+    background: url("../img/fundo.jpg");
+    font-family: Comic Sans MS,Arial, verdana;
+}
+
+#superior{
+    background-color: black;
+    width:100%;    
+    height:203px;
+    
+}
+#letreiro{
+float:left; 
+margin-left:5px;
+margin-top:15px;
+}
+
+#boneco{    
+  float: left;   
+  margin-left:12px;   
+  width:200px;
+  height:198px; 
+}
+
+#painelpizzas{
+
+margin-left:20px;
+margin-right:20px;
+height:203px;
+width: 600px;
+}
+
+#telefone{
+
+margin-left:0px;
+margin-top:30px;
+float:left;
+}
+
+#menu{
+
+    float:left;
+    width:100%;
+    height: 50px;
+    background-color: #b20000;
+    border-bottom-color:black;
+    color: white;
+    display:inline-block;
+    position:absolute;
+
+
+}
+
+.lista{
+display:inline-block;
+margin-left:60px;
+    font-family: Comic Sans MS,Arial, verdana;
+    
+}
+
+a:hover, a:focus {
+
+}
+
+a{
+    display:inline-block;
+    margin-left:0px;
+    margin-right:-2px;
+    padding-top:13px;
+
+    width:150px;
+    height:31px;
+    text-align:center;
+    color: white;
+
+}
+
+li a:hover {
+    background-color:#990000;
+    height:50px;    
+    color: #ffffff;
+    text-decoration: none;
+
+    }
+
+
+
+#painel_esquerdo{
+    margin-top:60px;
+    float:left;
+    margin-left:20px;
+    background-color: #0d4f33;
+    width: 400px;
+    height: 473px;
+    color: white;
+    border-radius:5px;
+    border-style: inset;
+    border-width: 5px;
+    border-color: #631919;
+
+    
+    
+}
+
+#painel_direito{
+    margin-top:60px;
+    float:left;
+    margin-left:20px;
+    
+
+    color: black;
+    border-radius:15px;
+    
+    
+}
+#foto_gerente
+{
+	margin-left:20px;
+	margin-top:60px;
+	float:left;
+	
+}
+
+
+

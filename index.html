@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+    <title>Pousada Mar Aberto</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=320px" ></meta>	
+	
+	<link rel="shortcut icon" href="img/fav.png">
+    	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	
+    <link rel="stylesheet" href="css/estilos_acomodacoes.css">
+    
+	
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-locale_pt-br.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos_completo.css">
+    <script src="js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="" media="">
+	</head>	
+	<body ng-controller="reservascontroller"  >	      
+  		
+        <div id="superior">
+                <img src="img/letreiro.png">
+        </div>
+        
+    <!--FundoFoto Mobilie-->
+        <div id="fundoFotosMobile" >		
+				<div id="carousel01" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel01" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel01" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner"  role="listbox">
+						<div class="item active">
+							<img src="img/fotos_pousada/2.jpg" alt="Imagem escrito Foto1" >
+						</div>
+						<div class="item">
+							<img src="img/fotos_pousada/1.jpg" alt="Imagem escrito Foto2" >
+						</div>					
+					</div>
+				</div>       
+           </div>
+           
+            <div id="menu">
+               <ul   class="">
+                   <li  class=""><a  id="menu_home" href="#">Home</a> </li>
+                   <li id="menu_acomodacoes"  class=""> <a  href="#">Acomodações</a>
+                       <ul id="menu_quartos" >                     
+                        <li ><a id="suiteSol" href="#"> Suíte Sol <img src="img/1.JPG" ></a> </li>
+                        <li ><a id="suiteMar" href="#"> Suíte Mar <img src="img/3.JPG" > </a>  </li>
+                        <li ><a id="suiteFarol" href="#"> Suíte Farol <img src="img/2.JPG"> </a>  </li>
+                        <li ><a id="suitelarge" href="#"> Suíte Large <img src="img/suite_large.jpg" > </a> </li>
+                        <li ><a id="suiteExtraLarge" href="#"> Suíte Extra Large <img src="img/suite_extra_large.jpg" > </a>  </li>
+                        <li ><a id="suiteMaster" href="#"> Suíte Master<img src="img/suite_master.JPG" > </a>  </li>
+                       </ul>
+                   </li>
+                   <li id="sobrenos" class=""><a href="#">Sobre nós</a> </li>
+                   <li id="promocoes" class=""><a href="#">Promoções</a> </li>                   
+				   <li id="como_chegar" class=""><a href="#">Como chegar</a> </li>
+               </ul>
+            </div>  
+       <div id="placa">
+            <img src="img/placa2.png">
+            <div>
+            <p><b>Ligue agora!</b></p>
+            <p><b>13-5593-1400</b></p>
+            </div>
+        </div> 
+        
+        <div>            
+            <div id="reservas">                 
+            <p>Faça sua reserva</p>            
+                <div> 
+                    <label>Data Entrada</label>
+                    <div class="form-group">
+                        <div class="input-group" id="datetimepicker1">                        
+                        <input type="date" id="DtInicial" class="" ng-model="Reserva.DataIni" placeholder="Data incial"/>                         
+                        </div> 
+                    </div>
+                    <label>Data Saída</label>
+                    <div class="form-group">
+                        <div class="input-group" id="datetimepicker1">
+                        <input type="date" id="DtSaida" class="" ng-model="Reserva.DataFim" placeholder="Data final"/>
+                        </div>
+                    </div>                
+                    <label>Numero de hóspedes</label>		
+				    <br/>
+				    <div class="form-group">
+						    <input type="number" id="numPessoas"  ng-model="Reserva.NumHospede" class="form-control" />
+                    </div>					
+                    <input type="button" ng-click="addlcto()" class="btn btn-warning" value="Reservar agora">                        
+                </div>                
+            </div>        
+        </div>
+     
+        
+       <div id="fundoFotos" >
+		 <!--Fundo fotos-->
+				<div id="carousel01" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel01" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel01" data-slide-to="1"></li>
+					</ol>
+					<div class="carousel-inner"  role="listbox">
+						<div class="item active">
+							<img src="img/fotos_pousada/2.jpg" alt="Imagem escrito Foto1" >
+						</div>
+						<div class="item">
+							<img src="img/fotos_pousada/1.jpg" alt="Imagem escrito Foto2" >
+						</div>						
+					</div>
+				</div>
+        
+           <div id="painel"> 
+               <div><p>Home - inicial</p><p> Fechar</p> </div>
+               
+                <div ng-controller="promocoes" id="conteudo">
+                    <div class="conteudoInterno"> 
+
+                    </div>
+
+                </div> 
+           </div>             
+        </div>
+        <div id="inferior">    
+        </div>  
+        <script src="js/script.js"></script>    
+        <script src="js/navegacao.js"></script>
+        <script src="js/my-script-angular.js" type="text/javascript"></script>
+
+        
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:chocolate; color:white; font-family:Helvetica Neue,Helvetica,Arial,sans-serif">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Orçamento</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>O valor aproximado de sua estadia será {{valorEstadia | currency : 'R$ ' :2 }}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+
+
+        </style>
+
+    </body>
+</html>
